@@ -1,8 +1,7 @@
 6. Quy ước thiết kế phần mềm
 =======
 
-Tại sao cần có quy ước, ký hiệu chung hay tạo các mô hình trong thiết kế phần mềm?
------------
+###Tại sao cần có quy ước, ký hiệu chung hay tạo các mô hình trong thiết kế phần mềm?
 * Truyền tải được nhiều thông tin về phần mềm đến cho người đọc hơn là dùng những dữ liệu thô như văn bản mô tả phần mềm.
 * Mô hình giúp chúng ta tổ chức, trình bày trực quan, thấu hiểu và tạo nên các hệ thống phức tạp
 * Tất cả mọi người cùng hiểu được phần mềm được xây dựng và hoạt động như thế nào.
@@ -11,7 +10,7 @@ Các loại ký hiệu được sử dụng trong thiết kế phần mềm:
 1. Ký hiệu dùng trong thiết kế kiến trúc, tổ chức của phần mềm (static view)
 2. Ký hiệu dùng cho quá trình thiết kế chi tiết, hành vi của phần mềm (dynamic view)
 
-Static view
+6.1. Static view
 -----------
 Những ký hiệu này được dùng trong phân rã mức cao của thiết kế phần mềm, tức là mô tả cấu trúc, các thành phần chính của phần mềm và sự kết nối giữa chúng.
 
