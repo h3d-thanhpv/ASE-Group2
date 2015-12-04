@@ -23,3 +23,24 @@ Hai vấn đề cần xem xét:
 - *Người dùng cung cấp thông tin cho hệ thống bằng cách nào?*
 - *Hệ thống nên trình bày thông tin (output) cho người dùng như thế nào?*
 
+4.3: Các kiểu tương tác
+----------
+
+Các kiểu tương tác phổ biến:
+
+- **Thao tác trực tiếp** – Direct manipulation
+- **Chọn lựa bằng menu** – Menu selection
+- **Điền form** – Form fill-in
+- **Dòng lệnh** – Command language
+- **Ngôn ngữ tự nhiên** – a Natural language
+
+
+Kiểu tương tác | Ưu điểm chính | Nhược điểm chính | Ví dụ
+-------------- | ------------- | ---------------- | -----
+Thao tác trực tiếp | Tương tác trực quan, nhanh chóng và dễ hiểu | Có thể khó cài đặt. Chỉ thích hợp khi có ẩn dụ hình ảnh cho các tác vụ và đối tượng | Trò chơi điện tử và các ứng dụng có drag & drop
+Chọn lựa bằng menu | Tránh lỗi cho người dùng, không phải làm nhiều thao tác | Chậm chạp với người sử dụng có kinh nghiệm. Có thể phức tạp nếu có nhiều lựa chọn menu | Đa số các hệ thống thông dụng
+Điền form | Nhập dữ liệu đơn giản, dễ học, có thể kiểm tra được | Tốn không gian hiển thị, rắc rối khi lựa chọn của người dùng không khớp với kiểu dữ liệu của form | Đăng kí thông tin cá nhân, khai thuế
+Dòng lệnh | Mạnh và linh động | Khó học, xử lý lỗi kém | Terminal, Autocad
+Ngôn ngữ tự nhiên | Đáp ứng được người dùng không chuyên, dễ mở rộng | Cần gõ nhiều, các hệ thống hiểu ngôn ngữ tự nhiên không đáng tin cậy | Trợ lý ảo
+
+
