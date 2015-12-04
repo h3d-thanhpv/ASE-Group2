@@ -8,41 +8,41 @@
 
 Các loại ký hiệu được sử dụng trong thiết kế phần mềm:
 
-1.  Ký hiệu dùng trong thiết kế kiến trúc, tổ chức của phần mềm (*static view*).
-2.  Ký hiệu dùng cho quá trình thiết kế chi tiết, hành vi của phần mềm (*dynamic view*).
+1.  Ký hiệu dùng trong thiết kế kiến trúc, tổ chức của phần mềm (**static view**).
+2.  Ký hiệu dùng cho quá trình thiết kế chi tiết, hành vi của phần mềm (**dynamic view**).
 
 ###6.1. Static view
 
 Những ký hiệu, mô hình này được dùng trong phân rã mức cao của thiết kế phần mềm, tức là mô tả cấu trúc, các thành phần chính của phần mềm và sự kết nối giữa chúng. Dưới đây là một số mô hình thường dùng trong thiết kế phần mềm ở mức cao.
 
   * *Architecture description languages (ADLs) - Ngôn ngữ đặc tả kiến trúc*: được sử dụng để mô tả một kiến trúc phần mềm. Có nhiều ngôn ngữ ADL khác nhau được phát triển bởi các tổ chức như Wrigh (được phát triển bởi Carnegie Mellon), ACME (Carnegie Mellon), xADL (UCI), Darwin (Imperial College London), DAOP-ADL (Trường đại học Málaga - Tây Ban Nha). Các thành phần cơ bản của một ngôn ngữ ADL là thành phần, kết nối và cấu hình hệ thống.
-  * *Class and object diagrams - Biểu đồ lớp*: mô tả quan sát tĩnh của hệ thống thông qua các lớp và các mối quan hệ của chúng
-  * *Component diagrams - Biểu đồ thành phần*: biểu đồ mô tả các thành phần và sự phụ
+  * **Class and object diagrams - Biểu đồ lớp**: mô tả quan sát tĩnh của hệ thống thông qua các lớp và các mối quan hệ của chúng
+  * **Component diagrams - Biểu đồ thành phần**: biểu đồ mô tả các thành phần và sự phụ
 thuộc của chúng trong hệ thống. Các thành phần của hệ thống có thể là mã nguồn, thành phần mã nhị phân (tệp mã đích, thư viện,...) và thành phần thực thi.
-  * *Class responsibility collaborator cards (CRCs)*: được dùng trong thiết kế hướng đối tượng, sử dụng để biểu thị tên của các thành phần (class) cùng với trách nhiệm và các thành phần hợp tác với nó. CRCs ban đầu được đề xuất bởi Ward Cunningham và Kent Beck như một công cụ giảng dạy, sau được phát triển và sử dụng trong thực tế thiết kế phần mềm.
-  * *Deployment diagrams - Biểu đồ triển khai*: chỉ ra cấu hình các phần tử xử lý lúc chương trình chạy, các nút trên mạng và các tiến trình phần mềm thực hiện trên những phần tử đó. Nó chỉ ra mối quan hệ giữa các phần cứng và phần mềm của hệ thống. Biểu đồ triển khai chỉ ra toàn bộ các nút trên mạng, kết nối giữa chúng và các tiến trình chạy trên
+  * **Class responsibility collaborator cards (CRCs)**: được dùng trong thiết kế hướng đối tượng, sử dụng để biểu thị tên của các thành phần (class) cùng với trách nhiệm và các thành phần hợp tác với nó. CRCs ban đầu được đề xuất bởi Ward Cunningham và Kent Beck như một công cụ giảng dạy, sau được phát triển và sử dụng trong thực tế thiết kế phần mềm.
+  * **Deployment diagrams - Biểu đồ triển khai**: chỉ ra cấu hình các phần tử xử lý lúc chương trình chạy, các nút trên mạng và các tiến trình phần mềm thực hiện trên những phần tử đó. Nó chỉ ra mối quan hệ giữa các phần cứng và phần mềm của hệ thống. Biểu đồ triển khai chỉ ra toàn bộ các nút trên mạng, kết nối giữa chúng và các tiến trình chạy trên
 chúng.
-  * *Entity-relationship diagrams (ERDs) - Sơ đồ thực thể quan hệ*: được sử dụng để đại diện cho mô hình khái niệm dữ liệu lưu trữ trong kho thông tin.
-  * *Interface description languages (IDLs) - Ngôn ngữ mô tả giao diện*: ngôn ngữ lập trình được sử dụng để xác định các giao diện (tên và các loại xuất khẩu hoạt động) của các thành phần phần mềm.
-  * *Structure charts - Biểu đồ cấu trúc*: Chúng được sử dụng trong lập trình có cấu trúc để sắp xếp module của chương trình vào một cái cây. Mỗi mô-đun được đại diện bởi một cái hộp, trong đó có tên của module. Cấu trúc cây biểu thị mối quan hệ giữa các module.
+  * **Entity-relationship diagrams (ERDs) - Sơ đồ thực thể quan hệ**: được sử dụng để đại diện cho mô hình khái niệm dữ liệu lưu trữ trong kho thông tin.
+  * **Interface description languages (IDLs) - Ngôn ngữ mô tả giao diện**: ngôn ngữ lập trình được sử dụng để xác định các giao diện (tên và các loại xuất khẩu hoạt động) của các thành phần phần mềm.
+  * **Structure charts - Biểu đồ cấu trúc**: Chúng được sử dụng trong lập trình có cấu trúc để sắp xếp module của chương trình vào một cái cây. Mỗi mô-đun được đại diện bởi một cái hộp, trong đó có tên của module. Cấu trúc cây biểu thị mối quan hệ giữa các module.
 
 ###6.2. Dynamic view
 
 Có nhiều loại ký hiệu, mô hình dùng cho qúa trình thiết kế chi tiết đang được áp dụng phổ biến hiện nay.
-  * *Activity diagram - Sơ đồ  hoạt động*: Biểu đồ hoạt động tập trung vào công việc được thực hiện trong khi thực thi một thủ tục (hàm). Nó nắm bắt hành động (công việc và những hoạt động phải được thực hiện) cũng như kết quả của chúng theo sự biến đổi trạng thái.
-  * *Communication diagram - Biểu đồ giao tiếp*: được sử dụng để hiển thị sự tương tác xảy ra trong một nhóm của các đối tượng; trọng tâm là về đối tượng, các liên kết và những trao đổi giữa chúng.iếp
-  * *Data flow diagrams (DFDs) - Sơ đồ luồng dữ liệu*: một công cụ mô tả mối quan hệ thông tin giữa các đối tượng, cung cấp bức tranh tổng thế của hệ thống và một thiết kế sơ bộ về thực hiện các chức năng. Biều đồ luồng dữ liệu có thể được sử dụng để phân tích an ninh, vì nó cung cấp các hướng có thể tấn công và tiết lộ thông tin bí mật.
-  * *Decision tables and diagrams - Bảng và biểu đồ quyết định*: sử dụng để mô tả sự kết hợp phức tạp của các hành động trong phần mềm.
-  * *Flowcharts - Biểu đồ tiến trình (lưu đồ)*: Frank Gilbreth thành viên của ASME ( the American Society of Mechanical Engineers) giới thiệu lần đầu năm 1921. Nó mô tả một quá trình bằng cách sử dụng những hình ảnh hoặc những ký hiệu kỹ thuật ... nhằm mô tả đầy đủ nhất đầu ra và dòng chảy của quá trình, tạo điều kiện cho việc điều tra các cơ hội cải tiến bằng việc hiểu biết chi tiết về quá trình làm việc của nó.
-  * *Sequence diagrams - Biểu đồ tuần tự*: minh họa các đối tượng tương tác với nhau ra sao. Chúng tập trung vào các chuỗi thông điệp được gửi và nhận giữa các đối tượng.
-  * *State transition and state chart diagrams - Biểu đồ trạng thái*: nắm bắt vòng đời của các đối tượng, các hệ thống con (Subsystem) và các hệ thống. Chúng cho ta biết các trạng thái mà một đối tượng có thể có và các sự kiện (các thông điệp nhận được, các khoảng thời gian đã qua đi, các lỗi xảy ra, các điều kiện được thỏa mãn) sẽ ảnh hưởng đến những trạng thái đó như thế nào dọc theo tiến trình thời gian
-  * *Formal specification languages - Ngôn ngữ đặc tả chính thức*: ngôn ngữ văn bản mà sử dụng các khái niệm cơ bản từ toán học (ví dụ, logic, thiết lập, trình tự) để xác định một cách chặt chẽ và trừu tượng phần mềm giao diện thành phần và hành vi.
-  * *Pseudo code and program design languages (PDLs) - Mã giả và ngôn ngữ thiết kế chương trình*: cấu trúc ngữ lập trình như
+  * **Activity diagram - Sơ đồ  hoạt động**: Biểu đồ hoạt động tập trung vào công việc được thực hiện trong khi thực thi một thủ tục (hàm). Nó nắm bắt hành động (công việc và những hoạt động phải được thực hiện) cũng như kết quả của chúng theo sự biến đổi trạng thái.
+  * **Communication diagram - Biểu đồ giao tiếp**: được sử dụng để hiển thị sự tương tác xảy ra trong một nhóm của các đối tượng; trọng tâm là về đối tượng, các liên kết và những trao đổi giữa chúng.iếp
+  * **Data flow diagrams (DFDs) - Sơ đồ luồng dữ liệu**: một công cụ mô tả mối quan hệ thông tin giữa các đối tượng, cung cấp bức tranh tổng thế của hệ thống và một thiết kế sơ bộ về thực hiện các chức năng. Biều đồ luồng dữ liệu có thể được sử dụng để phân tích an ninh, vì nó cung cấp các hướng có thể tấn công và tiết lộ thông tin bí mật.
+  * **Decision tables and diagrams - Bảng và biểu đồ quyết định**: sử dụng để mô tả sự kết hợp phức tạp của các hành động trong phần mềm.
+  * **Flowcharts - Biểu đồ tiến trình (lưu đồ)**: Frank Gilbreth thành viên của ASME ( the American Society of Mechanical Engineers) giới thiệu lần đầu năm 1921. Nó mô tả một quá trình bằng cách sử dụng những hình ảnh hoặc những ký hiệu kỹ thuật ... nhằm mô tả đầy đủ nhất đầu ra và dòng chảy của quá trình, tạo điều kiện cho việc điều tra các cơ hội cải tiến bằng việc hiểu biết chi tiết về quá trình làm việc của nó.
+  * **Sequence diagrams - Biểu đồ tuần tự**: minh họa các đối tượng tương tác với nhau ra sao. Chúng tập trung vào các chuỗi thông điệp được gửi và nhận giữa các đối tượng.
+  * **State transition and state chart diagrams - Biểu đồ trạng thái**: nắm bắt vòng đời của các đối tượng, các hệ thống con (Subsystem) và các hệ thống. Chúng cho ta biết các trạng thái mà một đối tượng có thể có và các sự kiện (các thông điệp nhận được, các khoảng thời gian đã qua đi, các lỗi xảy ra, các điều kiện được thỏa mãn) sẽ ảnh hưởng đến những trạng thái đó như thế nào dọc theo tiến trình thời gian
+  * **Formal specification languages - Ngôn ngữ đặc tả chính thức**: ngôn ngữ văn bản mà sử dụng các khái niệm cơ bản từ toán học (ví dụ, logic, thiết lập, trình tự) để xác định một cách chặt chẽ và trừu tượng phần mềm giao diện thành phần và hành vi.
+  * **Pseudo code and program design languages (PDLs) - Mã giả và ngôn ngữ thiết kế chương trình**: cấu trúc ngữ lập trình như
 ngôn được sử dụng để mô tả, thiết kế chi tiết, hành vi của một phần mềm hoặc phương pháp.
 
 7. Chiến lược và phương pháp thiết kế phần mềm
 -----------
-Có nhiều chiến lược hỗ trợ cho quá trình thiết kế qua các phương pháp tiếp cận khác nhau. Chẳng có một chiến lược nào tốt nhất cho các dự án. Hai chiến lược thiết kế đang được dùng rộng rãi và cho thấy hiệu quả tích cực là thiết kế hướng chức năng và thiết kế hướng đối tượng. Mỗi chiến lược đều có những ưu, nhược điểm riêng phụ thuộc vào ứng dụng phát triển và nhóm phát triển phần mềm. Hai cách tiếp cận này là bổ sung và hỗ trợ cho nhau chứ không đối kháng nhau.
+Có nhiều chiến lược hỗ trợ cho quá trình thiết kế qua các phương pháp tiếp cận khác nhau. Tuy nhiên chẳng có một chiến lược nào tốt nhất cho các dự án. Hai chiến lược thiết kế đang được dùng rộng rãi và cho thấy hiệu quả tích cực là thiết kế hướng chức năng và thiết kế hướng đối tượng. Mỗi chiến lược đều có những ưu, nhược điểm riêng phụ thuộc vào ứng dụng phát triển và nhóm phát triển phần mềm. Hai cách tiếp cận này là bổ sung và hỗ trợ cho nhau chứ không đối kháng nhau.
 
 ###7.1 Thiết kế hướng chức năng
 
