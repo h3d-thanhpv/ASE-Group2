@@ -5,4 +5,4 @@ Members:
  - [Lê Thị Len](https://github.com/lenlt)
  - [Hoàng Thị Vân Anh](https://github.com/ngohuaanh)
  
- Assigment 1: Read chapter 2 in SWEBOK version 3
+Assigment 1: Read chapter 2 in SWEBOK version 3
