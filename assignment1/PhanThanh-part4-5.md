@@ -49,7 +49,7 @@ Ngôn ngữ tự nhiên | Đáp ứng được người dùng không chuyên, d�
 Thông tin có thể được trình bày trực tiếp (ví dụ text trong một trình soạn thảo) hoặc được biến đổi thành một dạng biểu diễn khác (ví dụ dạng đồ họa)
 
 Model-View-Controller là cách tiếp cận hỗ trợ nhiều kiểu biểu diễn dữ liệu
-![Model-View-Controller](http://blog.maxant.co.uk/pebble/images/ants_mvc.jpg)
+![Model-View-Controller](https://db.tt/mOXvkjRO)
 
 Có 2 loại thông tin cần được biểu diễn:
 
