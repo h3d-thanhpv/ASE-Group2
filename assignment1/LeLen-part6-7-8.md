@@ -15,7 +15,7 @@ Các loại ký hiệu được sử dụng trong thiết kế phần mềm:
 
 Những ký hiệu, mô hình này được dùng trong phân rã mức cao của thiết kế phần mềm, tức là mô tả cấu trúc, các thành phần chính của phần mềm và sự kết nối giữa chúng. Dưới đây là một số mô hình thường dùng trong thiết kế phần mềm ở mức cao.
 
-  * *Architecture description languages (ADLs) - Ngôn ngữ đặc tả kiến trúc*: được sử dụng để mô tả một kiến trúc phần mềm. Có nhiều ngôn ngữ ADL khác nhau được phát triển bởi các tổ chức như Wrigh (được phát triển bởi Carnegie Mellon), ACME (Carnegie Mellon), xADL (UCI), Darwin (Imperial College London), DAOP-ADL (Trường đại học Málaga - Tây Ban Nha). Các thành phần cơ bản của một ngôn ngữ ADL là thành phần, kết nối và cấu hình hệ thống.
+  * **Architecture description languages (ADLs) - Ngôn ngữ đặc tả kiến trúc**: được sử dụng để mô tả một kiến trúc phần mềm. Có nhiều ngôn ngữ ADL khác nhau được phát triển bởi các tổ chức như Wrigh (được phát triển bởi Carnegie Mellon), ACME (Carnegie Mellon), xADL (UCI), Darwin (Imperial College London), DAOP-ADL (Trường đại học Málaga - Tây Ban Nha). Các thành phần cơ bản của một ngôn ngữ ADL là thành phần, kết nối và cấu hình hệ thống.
   * **Class and object diagrams - Biểu đồ lớp**: mô tả quan sát tĩnh của hệ thống thông qua các lớp và các mối quan hệ của chúng
   * **Component diagrams - Biểu đồ thành phần**: biểu đồ mô tả các thành phần và sự phụ
 thuộc của chúng trong hệ thống. Các thành phần của hệ thống có thể là mã nguồn, thành phần mã nhị phân (tệp mã đích, thư viện,...) và thành phần thực thi.
