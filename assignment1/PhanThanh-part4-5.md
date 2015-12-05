@@ -95,3 +95,41 @@ Như vậy người dùng sẽ dễ dàng hơn trong việc tìm hiểu và sử
 Khi thiết kế giao diện, nhà thiết kế không được sử dụng nhiều hơn một ý nghĩa, hay chức năng trong một biểu tượng.
 Bằng cách sử dụng những biểu tượng và khái niệm quen thuộc, hỗ trợ biểu diễn tốt hơn các thông tin cần được quốc tế hóa, nhưng cần phải chú ý không nên áp dụng theo cùng một cách với tất cả các địa phương và khu vực khác nhau.
 
+5. Phân tích và đánh giá chất lượng thiết kế phần mềm
+==============
+
+Phần này gồm các phân tích và đánh giá chất lượng trong thiết kế phần mềm:
+
+- Cần thực hiện một số đánh giá UI để đánh giá mức độ thích hợp
+- Đánh giá đầy đủ và toàn bộ thì quá đắt và không thực tế cho hầu hết các hệ thống
+- Một giao diện cần được đánh giá theo một đặc tả về tính sử dụng.
+
+5.1: Các thuộc tính về tính sử dụng
+---------------
+
+Thuộc tính | Mô tả
+---------- | -----
+Khả năng học | Người dùng mới cần bao lâu để có thể hoạt động hiệu quả với hệ thống?
+Tốc độ vận hành | Tốc độ phản ứng của hệ thống có đáp ứng tốt công việc của người dùng?
+Chịu lỗi | Mức độ dung thứ lỗi của hệ thống đối với lỗi người dùng.
+Khả năng khôi phục | Khả năng hệ thống khôi phục từ lỗi của người dùng.
+Tương thích | Hệ thống gắn bó chặt chẽ với một kiểu làm việc đến đâu?
+
+5.2: Kĩ thuật đánh giá và phân tích
+---------------
+
+- Câu hỏi điều tra để lấy phản hồi của người dùng.
+- Quay video về việc sử dụng hệ thống rồi sau đó đánh giá nội dung.
+- Cài các đoạn mã thu thập thông tin về các tiện ích được sử dụng và lỗi của người dùng.
+- Phần mềm có chức năng thu thập phản hồi trực tuyến của người dùng.
+
+5.3: Biện pháp
+--------------
+
+Các biện pháp có thể được sử dụng để phân tích và đánh giá các khía cạnh khác nhau của việc thiết kế phần mềm.
+Ví dụ: cấu trúc, chất lượng, kích thước, hiệu năng, ...
+
+Các biện pháp này được chia thành 2 loại:
+
+- **Chức năng dựa trên thiết kế**: Chức năng được xây dựng bằng cách phân tích các giao diện của hệ thống, 
+- **Thiết kế hướng đối tượng**: Sử dụng lớp các đối tượng làm trung tâm, từ đó xây dựng ra chức năng và giao diện
