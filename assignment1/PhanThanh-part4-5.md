@@ -32,7 +32,7 @@ Các kiểu tương tác phổ biến:
 - **Chọn lựa bằng menu** – Menu selection
 - **Điền form** – Form fill-in
 - **Dòng lệnh** – Command language
-- **Ngôn ngữ tự nhiên** – a Natural language
+- **Ngôn ngữ tự nhiên** – Natural language
 
 
 Kiểu tương tác | Ưu điểm chính | Nhược điểm chính | Ví dụ
@@ -43,4 +43,55 @@ Chọn lựa bằng menu | Tránh lỗi cho người dùng, không phải làm n
 Dòng lệnh | Mạnh và linh động | Khó học, xử lý lỗi kém | Terminal, Autocad
 Ngôn ngữ tự nhiên | Đáp ứng được người dùng không chuyên, dễ mở rộng | Cần gõ nhiều, các hệ thống hiểu ngôn ngữ tự nhiên không đáng tin cậy | Trợ lý ảo
 
+4.4: Biểu diễn thông tin
+---------------
+
+Thông tin có thể được trình bày trực tiếp (ví dụ text trong một trình soạn thảo) hoặc được biến đổi thành một dạng biểu diễn khác (ví dụ dạng đồ họa)
+
+Model-View-Controller là cách tiếp cận hỗ trợ nhiều kiểu biểu diễn dữ liệu
+![Model-View-Controller](http://blog.maxant.co.uk/pebble/images/ants_mvc.jpg)
+
+Có 2 loại thông tin cần được biểu diễn:
+
+- **Thông tin tĩnh**: Tạo ở lúc bắt đầu và không thay đổi trong phiên làm việc.
+- **Thông tin động**: Thay đổi trong phiên làm việc và phải thông báo cho người sử dụng
+
+Các kĩ thuật hiển thị lượng lớn thông tin:
+- **Hình ảnh**: có thể cho thấy quan hệ giữa các thực thể và các xu hướng của dữ liệu
+- **Màu sắc**: thường dùng để *highlight* các thông tin đặc biệt
+
+Hướng dẫn về việc sử dụng màu sắc:
+- Hạn chế số màu và mức độ sặc sỡ
+- Dùng sự thay đổi màu để báo hiệu thay đổi trạng thái hệ thống.
+- Dùng kí hiệu màu (color coding) để hỗ trợ công việc người dùng đang cố làm. Highlight những điểm người dùng cần chú ý.
+- Dùng kí hiệu màu một cách cẩn trọng và nhất quán
+- Cẩn thận về hiệu ứng cặp đôi của màu sắc. Một số tổ hợp màu gây khó đọc, ví dụ như người ta không thể cùng lúc chú ý cả hai màu đỏ và xanh lam
+
+4.5: Quy trình thiết kế giao diện
+------------
+
+Thiết kế giao diện là một quy trình lặp đi lặp lại với sự liên lạc chặt chẽ giữa người dùng và người thiết kế. Ba hoạt động chính trong quy trình:
+
+- **User analysis**: Tìm hiểu người dùng sẽ làm gì với hệ thống;
+- **System prototyping**: phát triển một loạt các bản mẫu để thử nghiệm
+- **Interface evaluation**: thử nghiệm các bản mẫu cùng với người dùng
+
+4.6: Quốc tế hóa và địa phương hóa
+-----------
+
+Trong quá trình thiết kế cần phải xem xét đến việc ngôn ngữ theo chuẩn quốc tế và chuẩn địa phương. Tức là giao diện phần mềm có thể thích ứng với sự khác nhau về khu vực, ngôn ngữ và yêu cầu kĩ thuật của thị trường.
+Quốc tế hóa là quá trình thiết kế một ứng dụng bao gồm nhiều ngôn ngữ để có thể thích nghi với những khu vực không có sự thay đổi quan trọng về quy trình.
+Địa phương hóa là sự thích ứng của quốc tế hóa với một khu vực hoặc ngôn ngữ cụ thể bằng cách thêm vào các thành phần của địa phương và dịch văn bản.
+Các yếu tố cần được quan tâm như biểu tượng, số, tiền tệ, thời gian và các đơn vị đo lường.
+
+4.7: Biểu tượng và khái niệm quen thuộc
+-------------
+
+Người thiết kế giao diện sử dụng các biểu tượng và khái niệm để tạo được sự quen thuộc giữa các phần mềm với những hệ thống đã được biết đến trên thế giới.
+Như vậy người dùng sẽ dễ dàng hơn trong việc tìm hiểu và sử dụng giao diện.
+
+*Ví dụ*: Chức năng *xóa tập tin* có thể gắn vào biểu tượng thùng rác.
+
+Khi thiết kế giao diện, nhà thiết kế không được sử dụng nhiều hơn một ý nghĩa, hay chức năng trong một biểu tượng.
+Bằng cách sử dụng những biểu tượng và khái niệm quen thuộc, hỗ trợ biểu diễn tốt hơn các thông tin cần được quốc tế hóa, nhưng cần phải chú ý không nên áp dụng theo cùng một cách với tất cả các địa phương và khu vực khác nhau.
 
