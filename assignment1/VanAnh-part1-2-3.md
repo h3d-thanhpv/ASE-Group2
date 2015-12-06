@@ -68,14 +68,14 @@ Một số vấn đề quan trọng phải được xử lý trong khi thiết k
 <li>Kiến trúc thường (ví dụ, phân tâng, pipes and filter, blackboard)</li>
 <li>Các hệ thống phân tán (ví dụ client-server, three-tiers, broker)</li>
 <li>Các hệ thống tương tác (ví dụ, MVC, Presentation-Abstraction-Control, WPF)</li>
-<li>Các hệ thống mô phỏng ( ví dụ, microkernel, reflection)</li>
-<li>Các kiểu khác ( ví dụ, batch, interperters, process control, rule-based)</li>
+<li>Các hệ thống mô phỏng (ví dụ, microkernel, reflection)</li>
+<li>Các kiểu khác (ví dụ, batch, interperters, process control, rule-based)</li>
 </p>
 <h3>3.3	Mẫu thiết kế (Design Patterns)</h3>
 <p>Mẫu là một giải pháp phổ biến để giải quyết các vấn đề phồ biến trong ngữ cảnh đưa ra. Trong khi kiểu kiến trúc có thể được nhìn như mẫu mô tả tổ chức mức cao của phần mềm, mẫu thiết kế có thể sử dụng mô tả cụ thể ở mức thấp. Những mẫu thiết kế mức thấp bao gồm:
-<li>Mẫu tạo ( ví dụ, builder, factory, prototype, singleton)</li>
-<li>Mẫu cấu trúc ( ví dụ, adapter, bridge, composite, decorator, façade, fly-weight, proxy)</li>
-<li>Mẫu hành vi ( ví dụ, command, interperter, iterator, mediator, memento, observer, state, strategy, template, visitor)</li>
+<li>Mẫu tạo (ví dụ, builder, factory, prototype, singleton)</li>
+<li>Mẫu cấu trúc (ví dụ, adapter, bridge, composite, decorator, façade, fly-weight, proxy)</li>
+<li>Mẫu hành vi (ví dụ, command, interperter, iterator, mediator, memento, observer, state, strategy, template, visitor)</li>
 </p>
 <h3>3.4	Những quyết định thiết kế kiến trúc</h3>
 <p>Thiết kế kiến trúc là một quá trình sáng tạo. Trong suốt quy trình thiết kế, nhà thiết kế phần mềm phải tạo một số quệt định cơ bản ảnh hưởng sâu sắc tới các phát mềm và quy trình phát triển phần mềm. Nó rất hữu ích để suy nghĩa quy trình thiết kế phần mềm từ quan điểm làm quyết định hơn là từ quan điểm hoạt động. Thông thường, tác động vào chất lượng thuộc tính và hoán đổi giữa các thuốc tính cạnh trạnh là cơ sở cho quyết định thiết kế</p>
