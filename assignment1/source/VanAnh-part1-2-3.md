@@ -1,15 +1,9 @@
-<h1>Thiết kế phần mềm</h1>
-<h2>Giới thiệu</h2>
-<p>
-Khái niệm thiết kế được định nghĩa theo 2 cách sau:</br>
-<li>
-  <b>Thiết kế</b> là quy trình định nghĩa ra kiến trúc, thành phần, interfaces và các thuộc tính khác của một hệ thống hoặc một thành phần. 
+#Thiết kế phần mềm#
+##Giới thiệu##
+Khái niệm thiết kế được định nghĩa theo 2 cách sau:
+  - **Thiết kế** là quy trình định nghĩa ra kiến trúc, thành phần, interfaces và các thuộc tính khác của một hệ thống hoặc một thành phần. 
   Trong quy trình này, yêu cầu phần mềm được phân tích để đưa ra một cấu trúc của phần mềm làm cơ sở để làm ra phần mềm. 
-</li>
-<li>
-  <b>Thiết kế</b> là kết quả của một quá trình. Nó mô tả kiến trúc của một phần mềm như là phần mềm được phân rã và tổ chức như thế nào trong các thành phần và các interfaces giữa các thành phần như thế nào. Nó cũng có thể mô tả các thành phần ở mức chi tiết cho phép có thể xây dựng được phần mềm
-</li>
-</p>
+  - **Thiết kế** là kết quả của một quá trình. Nó mô tả kiến trúc của một phần mềm như là phần mềm được phân rã và tổ chức như thế nào trong các thành phần và các interfaces giữa các thành phần như thế nào. Nó cũng có thể mô tả các thành phần ở mức chi tiết cho phép có thể xây dựng được phần mềm
 <p>
 <b>Thiết kế phần mềm</b> đóng vai trò quan trọng: trong quá trình thiết kế, những kỹ sư phần mềm sẽ đề xuất các mô hình cụ thể là các bản vẽ thiết kế là giải pháp giải quyết vấn đề và thực hiện được. Chúng ta có thể phân tính và đánh giá những mô hình này có hay không phù hợp với những yêu cầu khác nhau
 Đầu ra của thiết kế phần mềm sẽ được sử dụng cho quá trình xây dựng và kiểm thử nên việc đánh giá một thiết kế có phù hợp hay không rất quan trọng, nếu một thiết kế sai sẽ dẫn đến tất cả các quá trình sau đó cũng sai và cần phải chỉnh sửa nếu thiết kế được chỉnh sửa.
