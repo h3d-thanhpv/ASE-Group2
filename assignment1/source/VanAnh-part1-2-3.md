@@ -38,7 +38,7 @@ Thiết kế phần thường được xem như là một quy trình 2 bước:
 
 ###1.4	Nguyên tắc thiết kế phần mềm###
 
-Nguyên tắc là “một giả định, giáo lý hoặc luật cơ bản và toàn diện”. Nguyên tắc thiết kế phần mềm là quan niệm chính cung cấp kiến thức cơ bản cho khái niệm và hướng tiếp cận thiết kế phần mềm khác nhau. Nguyên tắc thiết kế phần mềm bao gồm trừu tượng hóa; ghép nối và liên kết; phân rã và modul hóa; đóng gói/ẩn thông tin; tách giao diện và thực hiện; đầy đủ, toàn vẹn và nguyên thủy; và tách mối quan tâm (separation of cencerns)
+**Nguyên tắc** là “một giả định, giáo lý hoặc luật cơ bản và toàn diện”. **Nguyên tắc thiết kế phần mềm** là quan niệm chính cung cấp kiến thức cơ bản cho khái niệm và hướng tiếp cận thiết kế phần mềm khác nhau. Nguyên tắc thiết kế phần mềm bao gồm: trừu tượng hóa (abstraction); ghép nối và liên kết (coupling and conhesion); phân rã và modul hóa (decomposition and modularization); đóng gói/ẩn thông tin (encapsulation/information hiding); tách giao diện và thực hiện (separation of interface and implementation); đầy đủ, toàn vẹn và nguyên thủy (sufficiency, completeness, and primitiveness); và tách mối quan tâm (separation of cencerns)
 
 - **Abstraction**: là một cách nhìn của một đối tượng mà tập trung vào thông tin liên quan để cụ thể hóa mục đích và tránh bỏ xót thông tin”. Trong bối cảnh của thiết kế phần mềm, 2 cơ chế trừu tượng hóa chìa khóa là tham số hóa và cụ thể hóa. Trừu tượng bởi tham số hóa trừu tượng từ biểu diễn dữ liệu chi tiết bởi biểu diễn dữ liệu như tên những tham số. Trừu tượng hóa bởi cụ thể hóa dẫn đến 3 loại trừu tượng: trừu tượng thủ tục, trừu tượng dữ liệu và trừu tượng điều khiển (trừu tượng tương tác lẫn nhau)
 
@@ -52,15 +52,15 @@ Nguyên tắc là “một giả định, giáo lý hoặc luật cơ bản và 
 
 - **Tính đầy đủ, toàn vẹn và nguyên thủy**: mục tiêu của tính đầy đủ, toàn vẹn và nguyên thủy nghĩa là chắc rằng một thành phần chỉ tương ứng với những đặc điểm quan trọng của một trừu tượng. Nguyên thủy nghĩa là thiết kế nên được dựa trên mô hình dễ thực hiện
 
-- Tách liên quan. Một liên quan là một “khu vực quan tâm với sự liên quan đến thiết kế phần mềm”. Một liên quan thiết kế là một lĩnh vực của thiết kế mà liên quan đến một hay nhiều các bên liên quan. Mỗi kiến trúc nhìn một hay nhiều khung nhìn liên quan. Tác liên quan bởi những khung nhìn cho phép quan tâm các bên liên quan để tập trung vào một việc tại một thời điểm và yêu cầu và cung cấp một phương tiện quản lý phức tạp
+- **Tách mối quan tâm**. Một mối quan tâm là một “khu vực quan tâm với sự liên quan đến thiết kế phần mềm”. Một mối quan tâm thiết kế là một lĩnh vực của thiết kế mà liên quan đến một hay nhiều các bên liên quan (stakeholders). Mỗi kiến trúc nhìn một hay nhiều khung nhìn quan tâm. Tách mối quan tâm bởi những khung nhìn cho phép quan tâm các bên liên quan (stakeholders) tập trung vào một việc tại một thời điểm và yêu cầu và cung cấp một phương tiện quản lý phức tạp.
 
 ##2.	Những vấn đề chính trong thiết kế kiến trúc phần mềm##
 
 Một số vấn đề quan trọng phải được xử lý trong khi thiết kế phần mềm. Đặc biệt là những lo ngại về chất lượng phần mềm mà có thể kể đến như: hiệu suất, bảo mật, độ tin cậy, khả năng sử dụng, vv. Một số vấn đề quan trọng khác là làm thế nào để phân rã, tổ chức và đóng gói những thành phần phần mềm. Đây là nguyên tắc cơ bản mà tất các các phương pháp thiết phải giải quyết nó bằng cách này hay cách khác. Ngược lại, những vấn đề “liên quan đến các khía cạnh của các hành vi phần mềm mà lại không nằm trong miền ứng dụng mà nằm ở các miền khác có liên quan” Những vấn đề đó thường xuyên chồng chéo với các chức năng của hệ thống và được gọi những khía cạnh mà đa phần không phải là đơn vị phân rã của phần mềm mà là thuộc tính ảnh hưởng đến hiệu suất hoặc ngữ nghĩa của các thành phần một cách có hệ thống.
 
-###2.1	Tương tranh (concurrency)###
+###2.1	Đồng thời (concurrency)###
 
-Thiết kế cho tương tranh là có liên quan đến phân rã phần mềm thành quy trình, nhiệm vụ, quá trình và đối phó với các vấn đề liên quan đến tính hiệu quả, tính nguyên tố, đồng bộ hóa và lập kế hoạch
+Đồng thời là nhiều việc xảy ra tại cùng một thời điểm. Thiết kế để có tính đồng thời có liên quan đến phân rã phần mềm thành quy trình, nhiệm vụ, quá trình và đối phó với các vấn đề liên quan đến tính hiệu quả, tính nguyên tố, đồng bộ hóa và lập kế hoạch. Thiết kế này đảm bảo dễ phân chia công việc cũng như có thể hoàn thành công việc trong thời gian ngắn nhất.
 
 ###2.2	Điều khiển và xử lý các sự kiện###
 
@@ -74,7 +74,7 @@ Vấn đề của thiết kế này liên quan tới làm thế nào để xử 
 
 Vấn đề của thiết kế này liên quan đến làm thế nào để phân phối các phần mềm trên phần cứng ( bao gồm phần cứng máy tính và phần cứng mạng), làm thế nào các thành phần giao tiếp được với nhau, và làm thế nào tầng giữa có thể được sử dụng để đối phó với không tương thích phần mềm.
 
-2.5	Lỗi và xử lý ngoại lệ và lỗi dung nạp (error and exception handling and fault tolerance)
+##2.5	Lỗi và xử lý ngoại lệ và lỗi dung nạp (error and exception handling and fault tolerance)##
 
 Vấn đề của thiết kế này liên quan đến làm thế nào để phòng chống, chịu đựng và các xử lý lỗi và đối phó với các điều kiện ngoại lệ
 
@@ -86,19 +86,19 @@ Chú ý rằng chủ đề này không chỉ chi tiết giao diện người dù
 
 ###2.7	Bảo mật (sercurity)###
 
-Thiết kế cho bảo mật liên quan đến làm thế nào để ngăn chặn tiết lộ trái phép, sáng tạo, thay đổi, xóa, hoặc từ chối truy cập đến thông tin từ các nguồn khác. Nó cũng quan tâm làm thế nào để chịu được các cuộc tấn công bảo mật hoặc sự xâm phạm bởi hạn chế thiệt hại, tiếp tục dịch vụ, tốc độ sữa chữa và phục hồi, và thất bại và phục hồi an toàn. Kiểm soát truy cập là một khái niệm an ninh cơ bản và ta cũng nên đảm bảo sử dụng đúng mật mã
+Thiết kế cho bảo mật liên quan đến làm thế nào để ngăn chặn tiết lộ trái phép, sáng tạo, thay đổi, xóa, hoặc từ chối truy cập đến thông tin từ các nguồn khác. Nó cũng quan tâm làm thế nào để chịu được các cuộc tấn công bảo mật hoặc sự xâm phạm bởi hạn chế thiệt hại, tiếp tục dịch vụ, tốc độ sửa chữa và phục hồi, và thất bại và phục hồi an toàn. Kiểm soát truy cập là một khái niệm an ninh cơ bản và ta cũng nên đảm bảo sử dụng đúng mật mã
 
 ##3.	Kiến trúc và cấu trúc phần mềm##
 
-Một kiến trúc phần mềm là “tập hợp các cấu trúc cần thiết để suy luận về hệ thống, trong đó bao gồm các yếu tố phần mềm, mối quan hệ giữa chúng và đặc tính của cả hai. Trong suốt những năm 1990, tuy nhiên, kiến trúc phần mềm bắt đầu nổi lên như một ngành học rộng liên quan đến việc nghiên cứu các cấu trúc phần mềm và kiến trúc theo một cách chung chung. Điều đó dẫn đến một số khái niệm thú vị về thiết kế phần mềm tại những mức độ khác nhau của trừu tượng hóa. Mội số khái niệm có thể hữu ích trong việc thiết kế kiến trúc ( ví dụ phong cách kiến trúc) cũng như trong suốt thiết kế chi tiết (ví dụ design pattern). Những khái niệm thiết kế này cũng được sử dụng để thiết kế những chương trình tương tự.
+**Một kiến trúc phần mềm** là “tập hợp các cấu trúc cần thiết để suy luận về hệ thống, trong đó bao gồm các yếu tố phần mềm, mối quan hệ giữa chúng và đặc tính của cả hai. Trong suốt những năm 1990, kiến trúc phần mềm bắt đầu nổi lên như một ngành học rộng liên quan đến việc nghiên cứu các cấu trúc phần mềm và kiến trúc theo một cách chung. Điều đó dẫn đến một số khái niệm thú vị về thiết kế phần mềm ở những mức độ khác nhau của trừu tượng hóa. Mội số khái niệm có thể hữu ích trong việc thiết kế kiến trúc ( ví dụ phong cách kiến trúc) cũng như trong suốt quá trình thiết kế chi tiết (ví dụ design pattern). Những khái niệm thiết kế này cũng được sử dụng để thiết kế những chương trình tương tự.
 
-###3.1	Cấu trúc và viewpoints###
+###3.1	Cấu trúc và góc nhìn###
 
-Khía cạnh mức cao khác nhau của thiết kế phần mềm có thể được mô tả và tài liệu hóa. Những khía cạnh này thường được gọi là các góc nhìn “Một góc nhìn biểu diễn một phần khía cạch của kiến trúc phần mềm mà biểu diễn cụ thể chính xác của hệ thống phần mềm”. Các góc nhìn thích hợp với những vấn đề khác nhau liên quan đến phần mềm – ví dụ, góc nhìn logic (đáp ứng các yêu cầu chức năng) với góc nhìn tiến trình (vấn đề đồng thời) với góc nhìn vật lý (vấn đề phân phối) với góc nhìn phát triển (làm thế nào để thiết kế được break down thành các thành phần đơn vị với đại diện rõ ràng của sự phụ thuộc giữa các đơn vị). Nhiều tác giả sử dụng những thuật ngữ khác nhau-  như góc nhìn hành vi, góc nhìn chức năng, góc nhìn cấu trúc, góc nhìn mô hình dữ liệu. Tóm lại, thiết kế phần mềm là nhiều khía cạnh sản xuất bởi quá trình thiết kế và cấu tạo từ quan điểm độc lập tương đối và những góc nhìn trực giao.
+Khía cạnh mức cao khác nhau của thiết kế phần mềm có thể được mô tả và tài liệu hóa. Những khía cạnh này thường được gọi là các góc nhìn “Một góc nhìn biểu diễn một phần khía cạch của kiến trúc phần mềm mà biểu diễn cụ thể chính xác của hệ thống phần mềm”. Các góc nhìn thích hợp với những vấn đề khác nhau liên quan đến phần mềm – ví dụ, góc nhìn logic (đáp ứng các yêu cầu chức năng) với góc nhìn tiến trình (vấn đề đồng thời) với góc nhìn vật lý (vấn đề phân phối) với góc nhìn phát triển (làm thế nào để thiết kế được break down thành các thành phần đơn vị với đại diện rõ ràng của sự phụ thuộc giữa các đơn vị). Nhiều tác giả sử dụng những thuật ngữ khác nhau- như hành vi, chức năng, cấu trúc, góc nhìn mô hình dữ liệu. Tóm lại, thiết kế phần mềm là nhiều khía cạnh sản xuất bởi quá trình thiết kế và cấu tạo từ quan điểm độc lập tương đối và những góc nhìn trực giao.
 
 ###3.2	Kiểu kiến trúc###
 
-Kiểu kiến trúc là một chuyên môn hóa của phần tử và các loại liên quan, cùng với một bộ những hạn chế về cách nó có thể được sử dụng. Môt vài tác giải chỉ ra một số kiểu kiến trúc chính như sau:
+**Kiểu kiến trúc** là một chuyên môn hóa của phần tử và các loại liên quan, cùng với một bộ những hạn chế về cách nó có thể được sử dụng. Môt vài tác giải chỉ ra một số kiểu kiến trúc chính như sau:
 
 - Kiến trúc thường (ví dụ, phân tâng, pipes and filter, blackboard)
 
@@ -121,7 +121,7 @@ Mẫu là một giải pháp phổ biến để giải quyết các vấn đề 
 - Mẫu hành vi (ví dụ, command, interperter, iterator, mediator, memento, observer, state, strategy, template, visitor)
 
 ###3.4	Những quyết định thiết kế kiến trúc###
-Thiết kế kiến trúc là một quá trình sáng tạo. Trong suốt quy trình thiết kế, nhà thiết kế phần mềm phải tạo một số quệt định cơ bản ảnh hưởng sâu sắc tới các phát mềm và quy trình phát triển phần mềm. Nó rất hữu ích để suy nghĩa quy trình thiết kế phần mềm từ quan điểm làm quyết định hơn là từ quan điểm hoạt động. Thông thường, tác động vào chất lượng thuộc tính và hoán đổi giữa các thuốc tính cạnh trạnh là cơ sở cho quyết định thiết kế
+Thiết kế kiến trúc là một quá trình sáng tạo. Trong suốt quy trình thiết kế, nhà thiết kế phần mềm phải tạo một số quyết định cơ bản ảnh hưởng sâu sắc tới các phần mềm và quy trình phát triển phần mềm. Nên nghĩ rằng thiết kế kiến trúc tạo thành từ quan điểm quyết định hơn là quan điểm hoạt động. Thông thường, tác động vào chất lượng thuộc tính và hoán đổi giữa các thuộc tính cạnh trạnh là cơ sở cho quyết định thiết kế
 
 ###3.5	Tương tự giữa chương trình và framework###
 
